@@ -41,11 +41,15 @@ const languageData = {
             'gujarat-cm': [
                 "If the patient is applying himself/herself, Applicant's documents are not required.",
                 "If someone other than the patient is applying, that person must be listed in the Ration Card and must be 18+ years old.",
-                "Gujarat CM Relief Fund is only for Gujarat residents. Persons from other states are not eligible."
+                "Gujarat CM Relief Fund is only for Gujarat residents. Persons from other states are not eligible.",
+                "Diseases Covered: All types of Cancer (including Operation, Chemotherapy/Dose, Radiation), Heart Transplant, Liver Transplant, Kidney Transplant, Bone Marrow Transplant (Blood Cancer), Thalassemia, Cochlear Implant, All Heart Diseases, and other life-threatening diseases.",
+                "Not Covered: Accident cases and Knee Transplant are not covered under this fund."
             ],
             'pm-national': [
                 "If the patient is applying himself/herself, Applicant's documents are not required.",
-                "If someone other than the patient is applying, that person must be listed in the Ration Card and must be 18+ years old."
+                "If someone other than the patient is applying, that person must be listed in the Ration Card and must be 18+ years old.",
+                "Diseases Covered: All types of Cancer (including Operation, Chemotherapy/Dose, Radiation), Heart Transplant, Liver Transplant, Kidney Transplant, Bone Marrow Transplant (Blood Cancer), Thalassemia, Cochlear Implant, All Heart Diseases, and other life-threatening diseases.",
+                "Not Covered: Accident cases and Knee Transplant are not covered under this fund."
             ],
             'surat-mayor': [
                 "Applicant must be a resident of Surat Municipal Corporation area (Ration card must be from Surat Municipal Corporation).",
@@ -111,13 +115,17 @@ const languageData = {
         },
         fundNotes: {
             'gujarat-cm': [
-                "यदि मरीज स्वयं आवेदन कर रहा है, तो आवेदक के दस्तावेजों की आवश्यकता नहीं है।",
+                "यदि मरीज स्वयं आवेदन कर रहा है, तो आवेदक के दस्तावेज़ की आवश्यकता नहीं है।",
                 "यदि मरीज के अलावा कोई अन्य व्यक्ति आवेदन कर रहा है, तो वह व्यक्ति राशन कार्ड में सूचीबद्ध होना चाहिए और 18 वर्ष से अधिक आयु का होना चाहिए।",
-                "गुजरात मुख्यमंत्री राहत कोष केवल गुजरात के निवासियों के लिए है। अन्य राज्यों के व्यक्ति पात्र नहीं हैं।"
+                "गुजरात मुख्यमंत्री राहत कोष केवल गुजरात के निवासियों के लिए है। अन्य राज्यों के व्यक्ति पात्र नहीं हैं।",
+                "कवर की गई बीमारियां: सभी प्रकार के कैंसर (ऑपरेशन, कीमोथेरेपी/डोज, रेडिएशन सहित), हृदय प्रत्यारोपण, लीवर प्रत्यारोपण, किडनी प्रत्यारोपण, बोन मैरो प्रत्यारोपण (ब्लड कैंसर), थैलेसीमिया, कॉक्लियर इम्प्लांट, सभी हृदय रोग और अन्य जानलेवा बीमारियां।",
+                "कवर नहीं: दुर्घटना के मामले और घुटने का प्रत्यारोपण इस फंड में कवर नहीं हैं।"
             ],
             'pm-national': [
                 "यदि मरीज स्वयं आवेदन कर रहा है, तो आवेदक के दस्तावेजों की आवश्यकता नहीं है।",
-                "यदि मरीज के अलावा कोई अन्य व्यक्ति आवेदन कर रहा है, तो वह व्यक्ति राशन कार्ड में सूचीबद्ध होना चाहिए और 18 वर्ष से अधिक आयु का होना चाहिए।"
+                "यदि मरीज के अलावा कोई अन्य व्यक्ति आवेदन कर रहा है, तो वह व्यक्ति राशन कार्ड में सूचीबद्ध होना चाहिए और 18 वर्ष से अधिक आयु का होना चाहिए।",
+                "कवर की गई बीमारियां: सभी प्रकार के कैंसर (ऑपरेशन, कीमोथेरेपी/डोज, रेडिएशन सहित), हृदय प्रत्यारोपण, लीवर प्रत्यारोपण, किडनी प्रत्यारोपण, बोन मैरो प्रत्यारोपण (ब्लड कैंसर), थैलेसीमिया, कॉक्लियर इम्प्लांट, सभी हृदय रोग और अन्य जानलेवा बीमारियां।",
+                "कवर नहीं: दुर्घटना के मामले और घुटने का प्रत्यारोपण इस फंड में कवर नहीं हैं।"
             ],
             'surat-mayor': [
                 "आवेदक सूरत महानगरपालिका की सीमा क्षेत्र में रहने वाला होना चाहिए (राशन कार्ड सूरत महानगरपालिका का होना आवश्यक है)।",
@@ -183,13 +191,17 @@ const languageData = {
         },
         fundNotes: {
             'gujarat-cm': [
-                "જો દર્દી પોતે અરજી કરી રહ્યા હોય, તો અરજદારના દસ્તાવેજોની જરૂર નથી.",
+                "જો દર્દી પોતે અરજી કરી રહ્યો હોય, તો અરજદારના દસ્તાવેજોની જરૂર નથી.",
                 "જો દર્દી સિવાય બીજી કોઈ વ્યક્તિ અરજી કરી રહી હોય, તો તે વ્યક્તિ રેશન કાર્ડમાં સૂચિબદ્ધ હોવી જોઈએ અને 18 વર્ષથી વધુ ઉંમરની હોવી જોઈએ.",
-                "ગુજરાત મુખ્યમંત્રી રાહત ભંડોળ ફક્ત ગુજરાતના નિવાસીઓ માટે છે. અન્ય રાજ્યોના વ્યક્તિઓ પાત્ર નથી."
+                "ગુજરાત મુખ્યમંત્રી રાહત ફંડ માત્ર ગુજરાતના રહેવાસીઓ માટે છે. અન્ય રાજ્યોના લોકો પાત્ર નથી.",
+                "કવર થતા રોગો: તમામ પ્રકારના કેન્સર (ઓપરેશન, કીમોથેરેપી/ડોઝ, રેડિએશન સહિત), હાર્ટ ટ્રાન્સપ્લાન્ટ, લીવર ટ્રાન્સપ્લાન્ટ, કિડની ટ્રાન્સપ્લાન્ટ, બોન મેરો ટ્રાન્સપ્લાન્ટ (બ્લડ કેન્સર), થેલેસીમિયા, કોક્લિયર ઇમ્પ્લાન્ટ, તમામ હૃદય રોગો અને અન્ય જીવલેણ રોગો.",
+                "કવર નથી: અકસ્માત અને ઘૂંટણ ટ્રાન્સપ્લાન્ટ આ ફંડમાં કવર થતા નથી."
             ],
             'pm-national': [
                 "જો દર્દી પોતે અરજી કરી રહ્યા હોય, તો અરજદારના દસ્તાવેજોની જરૂર નથી.",
-                "જો દર્દી સિવાય બીજી કોઈ વ્યક્તિ અરજી કરી રહી હોય, તો તે વ્યક્તિ રેશન કાર્ડમાં સૂચિબદ્ધ હોવી જોઈએ અને 18 વર્ષથી વધુ ઉંમરની હોવી જોઈએ."
+                "જો દર્દી સિવાય બીજી કોઈ વ્યક્તિ અરજી કરી રહી હોય, તો તે વ્યક્તિ રેશન કાર્ડમાં સૂચિબદ્ધ હોવી જોઈએ અને 18 વર્ષથી વધુ ઉંમરની હોવી જોઈએ.",
+                "કવર થતા રોગો: તમામ પ્રકારના કેન્સર (ઓપરેશન, કીમોથેરેપી/ડોઝ, રેડિએશન સહિત), હાર્ટ ટ્રાન્સપ્લાન્ટ, લીવર ટ્રાન્સપ્લાન્ટ, કિડની ટ્રાન્સપ્લાન્ટ, બોન મેરો ટ્રાન્સપ્લાન્ટ (બ્લડ કેન્સર), થેલેસીમિયા, કોક્લિયર ઇમ્પ્લાન્ટ, તમામ હૃદય રોગો અને અન્ય જીવલેણ રોગો.",
+                "કવર નથી: અકસ્માત અને ઘૂંટણ ટ્રાન્સપ્લાન્ટ આ ફંડમાં કવર થતા નથી."
             ],
             'surat-mayor': [
                 "અરજદાર સુરત મહાનગરપાલિકાની હદ વિસ્તારમાં રહેતા હોવા જોઈએ (ચૂંટણી કાર્ડ સુરત મહાનગરપાલિકાનું હોવું જરૂરી છે).",
