@@ -14,10 +14,12 @@ const MIME_TYPES = {
     '.gif': 'image/gif',
     '.svg': 'image/svg+xml',
     '.md': 'text/markdown',
+    '.pdf': 'application/pdf',
 };
 
 const server = http.createServer((req, res) => {
-    let filePath = '.' + req.url;
+    // Decode URL to handle spaces and special characters in filenames
+    let filePath = '.' + decodeURIComponent(req.url);
     if (filePath === './') {
         filePath = './index.html';
     }

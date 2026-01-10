@@ -1,38 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="gu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advocate Sameer Boghara - Required Documents</title>
+    <title>એડવોકેટ સમીરભાઈ બોઘરા - જરૂરી દસ્તાવેજો</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <!-- Header Section -->
         <header class="header">
             <div class="logo-section">
                 <div class="logo-icon">⚖️</div>
-                <h1 class="advocate-name" id="advocateName">Advocate Sameer Boghara</h1>
+                <h1 class="advocate-name" id="advocateName">એડવોકેટ સમીરભાઈ બોઘરા</h1>
             </div>
-            
+
             <!-- Language Selector -->
             <div class="language-selector">
-                <label for="languageSelect" id="languageLabel">Choose Language:</label>
+                <label for="languageSelect" id="languageLabel">ભાષા પસંદ કરો:</label>
                 <div class="language-buttons">
-                    <button class="lang-btn active" data-lang="en" onclick="changeLanguage('en')">
-                        <span class="flag">🇬🇧</span>
+                    <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">
                         <span>English</span>
                     </button>
                     <button class="lang-btn" data-lang="hi" onclick="changeLanguage('hi')">
-                        <span class="flag">🇮🇳</span>
                         <span>हिन्दी</span>
                     </button>
-                    <button class="lang-btn" data-lang="gu" onclick="changeLanguage('gu')">
-                        <span class="flag">🇮🇳</span>
+                    <button class="lang-btn active" data-lang="gu" onclick="changeLanguage('gu')">
                         <span>ગુજરાતી</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Fund Selector -->
+            <div class="fund-selector">
+                <label id="fundLabel">ફંડ પસંદ કરો:</label>
+                <div class="fund-buttons">
+                    <button class="fund-btn" data-fund="gujarat-cm" onclick="selectFund('gujarat-cm')">
+                        <span id="fundOption1">ગુજરાત મુખ્યમંત્રી રાહત ભંડોળ</span>
+                    </button>
+                    <button class="fund-btn" data-fund="pm-national" onclick="selectFund('pm-national')">
+                        <span id="fundOption2">પ્રધાનમંત્રી રાષ્ટ્રીય રાહત ભંડોળ</span>
+                    </button>
+                    <button class="fund-btn" data-fund="surat-mayor" onclick="selectFund('surat-mayor')">
+                        <span id="fundOption3">સુરત મેયર ફંડ</span>
                     </button>
                 </div>
             </div>
@@ -41,21 +56,70 @@
         <!-- Main Content -->
         <main class="main-content">
             <div class="content-card">
-                <h2 class="section-title" id="documentTitle">Required Documents</h2>
+                <h2 class="section-title" id="documentTitle">જરૂરી દસ્તાવેજો</h2>
                 <div class="divider"></div>
-                
+
                 <ul class="document-list" id="documentList">
-                    <!-- Documents will be loaded dynamically -->
+                    <li class="select-fund-message">કૃપા કરીને ઉપરથી ફંડ પસંદ કરો</li>
+                </ul>
+
+                <!-- PDF Download Section (Surat Mayor Fund Only) -->
+                <div class="pdf-download-section" id="pdfDownloadSection" style="display: none;">
+                    <p class="pdf-instruction" id="pdfInstructionText"></p>
+                    <div class="pdf-buttons-container" id="pdfButtons">
+                        <!-- PDF download buttons will be loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Notes Section -->
+            <div class="notes-section" id="notesSection" style="display: none;">
+                <h3 class="notes-title" id="notesTitle">મહત્વપૂર્ણ નોંધો</h3>
+                <ul class="notes-list" id="notesList">
+                    <!-- Notes will be loaded dynamically -->
                 </ul>
             </div>
+
+            <!-- Hospital List Button (PM Fund Only) -->
+            <div class="hospital-list-section" id="hospitalListSection" style="display: none;">
+                <a href="hospitals.html" class="hospital-list-btn">
+                    <span class="hospital-icon">🏥</span>
+                    <span class="hospital-text" id="hospitalButtonText">List of Hospitals (Click Here)</span>
+                    <span class="arrow-icon">→</span>
+                </a>
+            </div>
+
         </main>
+
+        <!-- Contact Information -->
+        <div class="contact-section">
+            <h3 class="contact-title" id="contactTitle">📍 કાર્યાલય સરનામું</h3>
+            <div class="contact-details">
+                <p class="office-address">
+                    <strong id="officeLabel">કાર્યાલય:</strong><br>
+                    <span id="officeAddress">
+                        Office Number 3081, Third Floor, Silver Business Point,<br>
+                        Near VIP Circle, Opposite Nayra Petrol Pump,<br>
+                        Utran, Surat.
+                    </span>
+                </p>
+                <p class="phone-number">
+                    <strong id="phoneLabel">ફોન નંબર:</strong>
+                    <a href="tel:+919997799802">9997799802</a> <span id="contactPerson">(Raghu Boghara)</span>
+                </p>
+                <p class="whatsapp-note" id="whatsappNote">
+                    માત્ર કટોકટીની સ્થિતિમાં જ કૉલ કરો, અન્યથા WhatsApp પર સંદેશ મોકલો
+                </p>
+            </div>
+        </div>
 
         <!-- Footer -->
         <footer class="footer">
-            <p id="footerText">© 2026 Advocate Sameer Boghara. All rights reserved.</p>
+            <p id="footerText">© 2026 એડવોકેટ સમીરભાઈ બોઘરા. બધા અધિકારો અનામત.</p>
         </footer>
     </div>
 
     <script src="js/app.js"></script>
 </body>
+
 </html>
